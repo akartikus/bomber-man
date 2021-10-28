@@ -1,0 +1,8 @@
+C:\Users\sitra\Godot Project\Bomber\.mono\temp\bin\Debug\Bomber Man.dll
+C:\Users\sitra\Godot Project\Bomber\.mono\temp\bin\Debug\Bomber Man.pdb
+C:\Users\sitra\Godot Project\Bomber\.mono\temp\obj\Debug\Bomber Man.csprojAssemblyReference.cache
+C:\Users\sitra\Godot Project\Bomber\.mono\temp\obj\Debug\Bomber Man.AssemblyInfoInputs.cache
+C:\Users\sitra\Godot Project\Bomber\.mono\temp\obj\Debug\Bomber Man.AssemblyInfo.cs
+C:\Users\sitra\Godot Project\Bomber\.mono\temp\obj\Debug\Bomber Man.csproj.CoreCompileInputs.cache
+C:\Users\sitra\Godot Project\Bomber\.mono\temp\obj\Debug\Bomber Man.dll
+C:\Users\sitra\Godot Project\Bomber\.mono\temp\obj\Debug\Bomber Man.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "tw5zRgL6R29sXqN3CoZ6sp3wXVOqgCyaXxVy4UgfWCGxbzj/mqN09uF/dcPBq8pUtgryw8fYBcCbhhW+FA6Xgg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sitra\\Godot Project\\Bomber\\Bomber Man.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sitra\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\sitra\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.0\\microsoft.netframework.referenceassemblies.net472.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

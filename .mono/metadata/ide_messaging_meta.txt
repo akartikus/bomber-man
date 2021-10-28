@@ -1,0 +1,2 @@
+﻿63565
+C:/Users/sitra/programs/Godot_v3.3.4-stable_mono_win64/Godot.exe
