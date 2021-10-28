@@ -1,16 +1,22 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/Player/player_05.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Player/player_06.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Player/player_07.png" type="Texture" id=3]
 [ext_resource path="res://Script/Dyna.cs" type="Script" id=4]
+[ext_resource path="res://Assets/Player/player_23.png" type="Texture" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "down",
-"speed": 4.0
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -25,8 +31,7 @@ __meta__ = {
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-animation = "down"
-frame = 1
+animation = "idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
