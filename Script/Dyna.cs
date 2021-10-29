@@ -5,42 +5,60 @@ using static Godot.GD;
 public class Dyna : KinematicBody2D
 {
 
-    [Export] private int speed = 100;
-    private Vector2 velocity = new Vector2();
+    [Export] private int _speed = 100;
+    private Vector2 _velocity = new Vector2();
+    private AnimatedSprite _sprite;
 
     public override void _Ready()
     {
-
+        _sprite = GetNode<AnimatedSprite>("AnimatedSprite");
     }
 
     public override void _PhysicsProcess(float delta)
     {
         GetInput();
-        velocity = MoveAndSlide(velocity);
+        _velocity = MoveAndSlide(_velocity);
     }
 
     private void GetInput()
     {
-        velocity = new Vector2();
+        _velocity = new Vector2();
+
 
         if (Input.IsActionPressed("right"))
         {
-            velocity.x += 1;
+            _velocity.x += 1;
+            _sprite.Animation = "walk";
+            _sprite.FlipH = false;
+
         }
         else if (Input.IsActionPressed("left"))
         {
-            velocity.x -= 1;
+            _velocity.x -= 1;
+            _sprite.Animation = "walk";
+            _sprite.FlipH = true;
         }
         else if (Input.IsActionPressed("up"))
         {
-            velocity.y -= 1;
+            _velocity.y -= 1;
+            _sprite.Animation = "up";
         }
         else if (Input.IsActionPressed("down"))
         {
-            velocity.y += 1;
+            _velocity.y += 1;
+            _sprite.Animation = "down";
         }
 
-        velocity = velocity.Normalized() * speed;
+        if (_velocity.Length() > 0)
+        {
+            _velocity = _velocity.Normalized() * _speed;
+        }
+        else
+        {
+            _sprite.Animation = "idle";
+
+        }
+
     }
 
 }
