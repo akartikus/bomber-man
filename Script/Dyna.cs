@@ -5,7 +5,7 @@ using static Godot.GD;
 public class Dyna : KinematicBody2D
 {
 
-    [Export] private int _speed = 100;
+    [Export] private int _speed = 200;
     private Vector2 _velocity = new Vector2();
     private AnimatedSprite _sprite;
 
