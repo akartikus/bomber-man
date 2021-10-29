@@ -18,6 +18,7 @@ public class Dyna : KinematicBody2D
         GetInput();
         velocity = MoveAndSlide(velocity);
     }
+
     private void GetInput()
     {
         velocity = new Vector2();
